@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="container">
+      
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md ">
+            <h2 class="navbar-brand"> <i class="fa fa-paint-brush"></i> Welcome to dutch treat</h2>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#myMenu"></span>
+            </button>
+            <div id="myMenu" class="navbar-collapse collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Index">Home </a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="About">About </a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Contact">Contact </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+
+        <div>
+            <h2 class="text-center"> @ViewBag.Title </h2>
+            @RenderBody()
+        </div>
+    </section>
+    <footer class="container"> <div class="text-center"> Copyright -2020 Dutch Treats LLC </div> </footer>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/index.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
