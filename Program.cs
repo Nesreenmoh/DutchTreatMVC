@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using DutchTreat.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
 
 namespace DutchTreat
 {
@@ -17,7 +12,7 @@ namespace DutchTreat
         {
             var host = CreateHostBuilder(args).Build();
             RunSeeding(host);
-               host .Run();
+               host.Run();
         }
 
         private static void RunSeeding(IHost host)
@@ -44,7 +39,7 @@ namespace DutchTreat
             // removing the default configuration options
             builder.Sources.Clear();
             builder.AddJsonFile("config.json", false, true)
-                .AddXmlFile("config.xml", true)
+               
                 .AddEnvironmentVariables();
         }
     }

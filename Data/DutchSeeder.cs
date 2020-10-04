@@ -12,9 +12,9 @@ namespace DutchTreat.Data
     public class DutchSeeder
     {
         private readonly DutchContext _ctx;
-        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public DutchSeeder(DutchContext ctx, IHostingEnvironment hostingEnvironment)
+        public DutchSeeder(DutchContext ctx, IWebHostEnvironment hostingEnvironment)
         {
             _ctx = ctx;
             _hostingEnvironment = hostingEnvironment;

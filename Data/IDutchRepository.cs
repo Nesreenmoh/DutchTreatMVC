@@ -8,5 +8,7 @@ namespace DutchTreat.Data
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetAllProductsByCategory(string category);
         bool SaveChanges();
+        IEnumerable<Order> GetAllOrders();
+        Order GetById(int id);
     }
 }
