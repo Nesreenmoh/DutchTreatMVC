@@ -1,0 +1,40 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+@section Scripts{
+
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<div class="row mt-3">
+    <div class="col-md-4 offset-md-4">
+        <div asp-validation-summary="ModelOnly"></div>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="@Model.Username"> Username </label>
+                <input asp-for="Username" />
+                <span class="text-danger" asp-validation-for="@Model.Username"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Password"> Password </label>
+                <input type="password" asp-for="Password" />
+                <span class="text-danger" asp-validation-for="@Model.Password"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" asp-for="RememberMe" class="form-check-input" />
+                    <label asp-for="@Model.RememberMe"  class="form-check-label"> Remember Me </label>
+                </div>
+
+                <span  class="text-danger" asp-validation-for="@Model.RememberMe"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" />
+            </div>
+
+        </form>
+    </div>
+</div>

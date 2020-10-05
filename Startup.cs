@@ -1,14 +1,17 @@
+using AutoMapper;
 using DutchTreat.Data;
+using DutchTreat.Data.Entities;
 using DutchTreat.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Newtonsoft;
 using Newtonsoft.Json;
+using System.Reflection;
 
 namespace DutchTreat
 {
@@ -26,6 +29,12 @@ namespace DutchTreat
         public void ConfigureServices(IServiceCollection services)
         {
 
+
+            services.AddIdentity<StoreUser, IdentityRole>(cfg=>
+            {
+                cfg.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<DutchContext>();
+
             services.AddDbContext<DutchContext>(config=> 
             config.UseSqlServer(_config.GetConnectionString("DutchConnectionString")));
 
@@ -33,6 +42,8 @@ namespace DutchTreat
             services.AddTransient<DutchSeeder>();
             services.AddTransient<INullMailService, NullMailService>();
             services.AddControllersWithViews();
+
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             services.AddMvc()
                 
@@ -56,8 +67,11 @@ namespace DutchTreat
             app.UseStaticFiles();
            
             app.UseNodeModules();
+            app.UseAuthentication();
+           
 
             app.UseRouting();
+            app.UseAuthorization();
             app.UseEndpoints(cfg => 
             {
                 cfg.MapControllerRoute("Fallback",

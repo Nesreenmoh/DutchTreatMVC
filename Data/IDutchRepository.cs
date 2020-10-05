@@ -1,4 +1,5 @@
 ﻿using DutchTreat.Data.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace DutchTreat.Data
@@ -8,7 +9,8 @@ namespace DutchTreat.Data
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetAllProductsByCategory(string category);
         bool SaveChanges();
-        IEnumerable<Order> GetAllOrders();
+        IEnumerable<Order> GetAllOrders(bool IncludeItems);
         Order GetById(int id);
+        void AddEntity(Object model);
     }
 }
