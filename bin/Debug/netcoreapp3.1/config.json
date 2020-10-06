@@ -9,5 +9,10 @@
       "Microsoft": "Warning"
 
     }
+  },
+  "Tokens": {
+    "Key": "kjvjkdxjhdhkfkdj",
+    "Issuers": "localhost",
+    "Audience": ""
   }
 }

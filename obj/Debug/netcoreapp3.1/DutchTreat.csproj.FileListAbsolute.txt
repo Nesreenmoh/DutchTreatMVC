@@ -168,6 +168,7 @@ C:\Users\NALSHARG\source\repos\DutchTreat\bin\Debug\netcoreapp3.1\ru\Microsoft.C
 C:\Users\NALSHARG\source\repos\DutchTreat\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\NALSHARG\source\repos\DutchTreat\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\NALSHARG\source\repos\DutchTreat\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\NALSHARG\source\repos\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\NALSHARG\source\repos\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\NALSHARG\source\repos\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csproj.CoreCompileInputs.cache
 C:\Users\NALSHARG\source\repos\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\NALSHARG\source\repos\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

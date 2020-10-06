@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uamJNZdRH1SoHv/wg+v48Y91ULXhuRlx5ZdbZqdu92s5YMBOkftdHrKFQoxONKcw3DFOz1/aptGv5WTO19i6nw==",
+  "dgSpecHash": "MT4DQvnNfO5oEy++ic8fiRYDkjlSHLikFkWD7UjqMsViIh+OTvbKbWHanabas3wjws2IpGY9mVpK68B75TwGCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\NALSHARG\\source\\repos\\DutchTreat\\DutchTreat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NALSHARG\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\NALSHARG\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\NALSHARG\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\NALSHARG\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\NALSHARG\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.8\\microsoft.aspnetcore.connections.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\NALSHARG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0-rc.1.20451.17\\microsoft.aspnetcore.cryptography.internal.5.0.0-rc.1.20451.17.nupkg.sha512",
     "C:\\Users\\NALSHARG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0-rc.1.20451.17\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0-rc.1.20451.17.nupkg.sha512",
